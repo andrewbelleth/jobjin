@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+$baseFontSize: 16;
+
+@function rem($pixels) {
+    @return $pixels / $baseFontSize * 1rem;
+}
+
+@function em($pixels, $fontSize: $baseFontSize) {
+    @return $pixels / $fontSize * 1em;
+}
+
+:root {
+    --white: #FFFFFF;
+    --navy: #1649A8;
+    --blue: #1649A8;
+    --black: #333333;
+    --orange: #F67A25;
+    --yellow: #FFF425;
+    --red: #D93E13;
+    --green: #16940A;
+}
+
+$white: var(--white);
+$black: var(--black);
+$blue: var(--blue);
+$navy: var(--navy);
+$orange: var(--orange);
+$red: var(--red);
+$yellow: var(--yellow);
+$green: var(--green);
+
+
+$breakpoints: (
+    "widePc": 1921px,
+    "pc": 1024px,
+    "tb": 768px,
+    "sp": 640px
+);
+
+@mixin mq($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @if ($breakpoint =="widePc") {
+            @media (min-width: map-get($breakpoints, $breakpoint)) {
+                @content;
+            }
+        }
+
+        @else {
+            @media (max-width: map-get($breakpoints, $breakpoint)) {
+                @content;
+            }
+        }
+    }
+
+    @else {
+        @error "Breakpoint `#{$breakpoint}` not found in $breakpoints";
+    }
+}
