@@ -749,7 +749,7 @@ img {
 .copy {
   position: absolute;
   width: 27.625em;
-  top: 1.178125em;
+  top: 0.5em;
   left: 7.05em;
 }
 @media (max-width: 1024px) {
@@ -762,7 +762,7 @@ img {
 @media (max-width: 768px) {
   .copy {
     width: 18.625em;
-    top: 1.5em;
+    top: 0.625em;
     left: 50%;
     transform: translateX(-50%);
   }

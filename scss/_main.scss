@@ -14,7 +14,7 @@
 .copy {
     position: absolute;
     width: em(442);
-    top: em(18.85);
+    top: em(8);
     left: em(112.8);
 
     @include mq(pc) {
@@ -25,7 +25,7 @@
 
     @include mq(tb) {
         width: em(298);
-        top: em(24);
+        top: em(10);
         left: 50%;
         transform: translateX(-50%);
     }
