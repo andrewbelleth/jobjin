@@ -355,6 +355,314 @@
     }
 }
 
+.fv-b {
+    height: rem(862);
+
+    @include mq(pc) {
+        height: rem(662 + 50);
+    }
+
+    @include mq(tb) {
+        height: 50.5rem;
+    }
+
+    @include mq(sp) {
+        height: 44.5rem;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        background: url(../images/b-ver/fv-b-bg.webp) no-repeat center bottom/100%;
+
+        @include mq(pc) {
+            background-position: right bottom;
+            background-size: cover;
+        }
+    }
+
+    &__top-banner {
+        position: relative;
+        z-index: 2;
+        height: em(90);
+        width: 100%;
+        background: $orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-text {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &--01 {
+                color: $white;
+                font-size: 2.3125em;
+                font-weight: 700;
+                line-height: 100%;
+                letter-spacing: 0.06em;
+            }
+
+            &--02 {
+                width: em(339);
+                height: em(35);
+                margin-inline: 0 em(8);
+            }
+
+            &--03 {
+                color: $white;
+                font-size: em(35);
+                font-weight: 700;
+                line-height: 100%;
+                letter-spacing: 0.06em;
+            }
+        }
+
+        @include mq(pc) {
+            &-text {
+                &--01 {
+                    font-size: rem(32);
+                }
+
+                &--02 {
+                    width: rem(290);
+                    height: rem(30);
+                }
+
+                &--03 {
+                    font-size: rem(30);
+                }
+            }
+        }
+
+        @include mq(tb) {
+            height: em(120);
+
+            &-text {
+                flex-direction: column;
+                align-items: center;
+                gap: em(8);
+
+                &--01 {
+                    font-size: rem(27);
+                }
+
+                &--02 {
+                    width: rem(240);
+                    height: rem(25);
+                }
+
+                &--03 {
+                    font-size: rem(25);
+                }
+            }
+        }
+
+        @include mq(sp) {
+            height: em(120);
+
+            &-text {
+                &--01 {
+                    font-size: rem(22);
+                }
+
+                &--02 {
+                    width: rem(210);
+                    height: rem(20);
+                }
+
+                &--03 {
+                    font-size: rem(20);
+                }
+            }
+        }
+    }
+
+    &__body {
+        position: relative;
+        z-index: 1;
+        height: em(570);
+        width: 100%;
+        margin-top: em(-20);
+        padding-top: rem(40 + 20);
+        max-width: em(1440);
+        margin-inline: auto;
+
+        @include mq(pc) {
+            height: em(470 + 50);
+            margin-top: em(0);
+            padding-top: rem(40);
+        }
+
+        @include mq(tb) {
+            height: 32.5em;
+        }
+
+        @include mq(sp) {
+            height: em(458);
+        }
+    }
+
+    &__text-box {
+        @include mq(sp) {
+            max-width: em(375);
+            margin-inline: auto;
+        }
+    }
+
+    &__main-text {
+        position: relative;
+        z-index: 3;
+
+        &--01 {
+            width: em(654);
+            margin-left: em(154);
+        }
+
+        &--02 {
+            width: em(790);
+            margin-left: em(148);
+            margin-top: em(16);
+        }
+
+        @include mq(pc) {
+            &--01 {
+                margin-left: em(94);
+                width: em(454);
+            }
+
+            &--02 {
+                margin-left: em(88);
+                width: em(590);
+            }
+        }
+
+        @include mq(sp) {
+            &--01 {
+                margin-left: em(24);
+                width: em(254 + 50);
+            }
+
+            &--02 {
+                width: em(290 + 50);
+                margin-left: em(18);
+                margin-top: em(12);
+            }
+        }
+    }
+
+    &__title {
+        position: relative;
+        z-index: 3;
+
+        &--01 {
+            width: em(567);
+            margin-left: em(149);
+            margin-top: em(26);
+        }
+
+        &--02 {
+            width: em(553);
+
+        }
+
+        &--03 {
+            width: em(456.5);
+            margin-top: em(40);
+        }
+
+        &-col {
+            display: flex;
+            align-items: flex-start;
+            gap: em(12);
+            margin-top: em(0);
+            margin-left: em(148);
+        }
+
+        @include mq(pc) {
+            &--01 {
+                margin-left: em(89);
+                width: em(367);
+            }
+
+            &--02 {
+                width: em(353);
+            }
+
+            &--03 {
+                width: em(256.5);
+                margin-top: em(36);
+            }
+        }
+
+        @include mq(tb) {
+            &--03 {
+                margin-top: 0;
+            }
+
+            &-col {
+                flex-direction: column;
+                gap: em(10);
+                margin-left: em(88);
+            }
+        }
+
+        @include mq(sp) {
+            &--01 {
+                margin-left: em(19);
+                width: em(267 + 50);
+            }
+
+            &--02 {
+                width: em(253 + 50);
+            }
+
+            &--03 {
+                width: em(156.5 + 50);
+                margin-top: em(12);
+            }
+
+            &-col {
+                margin-left: em(18);
+            }
+        }
+    }
+
+    &__image {
+        position: absolute;
+        z-index: 2;
+        bottom: em(0);
+        right: em(60);
+        pointer-events: none;
+        width: em(585);
+        z-index: 2;
+
+        @include mq(pc) {
+            width: em(375 + 50);
+            right: em(16);
+        }
+
+        @include mq(tb) {
+            width: em(375);
+            right: em(16);
+        }
+
+        @include mq(sp) {
+            width: em(175 + 20);
+            right: em(0);
+        }
+    }
+}
+
+.u-moblie {
+    display: none;
+
+    @include mq(tb) {
+        display: block;
+    }
+}
+
 .structure {
     &__head {
         position: relative;
@@ -718,6 +1026,7 @@
 
         &__title {
             margin-right: em(8);
+
             &--s {
                 font-size: 1.5em;
                 font-weight: 500;
@@ -1372,7 +1681,8 @@
             &__title {
                 &--l {
                     font-size: 1.75em;
-                    > span::before {
+
+                    >span::before {
                         top: 0;
                     }
                 }
@@ -2090,6 +2400,7 @@
             padding: em(22) 2.5em;
             background: rgb(230, 236, 253);
             cursor: pointer;
+
             &::-webkit-details-marker {
                 display: none;
             }

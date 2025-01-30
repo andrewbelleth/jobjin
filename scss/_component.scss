@@ -26,6 +26,7 @@
 
     &__logo {
         display: flex;
+        align-items: center;
         gap: rem(10);
         width: fit-content;
         padding-top: rem(8);
@@ -729,6 +730,10 @@
 
     &--02 {
         padding-bottom: em(100);
+    }
+
+    &-b {
+        padding: 0 !important;
     }
 
     @include mq(sp) {
