@@ -51,7 +51,7 @@
                     left: 0;
                     width: rem(18);
                     height: rem(47);
-                    background-image: url(../images/c-ver/lp-c-ct01-var-a.png);
+                    background-image: url(../images/c-ver/lp-c-ct01-var-a.webp);
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -64,7 +64,7 @@
                     right: 0;
                     width: rem(17);
                     height: rem(48);
-                    background-image: url(../images/c-ver/lp-c-ct01-var-b.png);
+                    background-image: url(../images/c-ver/lp-c-ct01-var-b.webp);
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -190,7 +190,7 @@
             color: #F43500;
             width: rem(786);
             height: rem(203);
-            background-image: url(../images/c-ver/lp-c-ct02-head.png);
+            background-image: url(../images/c-ver/lp-c-ct02-head.webp);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -294,8 +294,8 @@
             line-height: 1.5;
             letter-spacing: 0;
             margin-top: rem(20);
-            
-            
+
+
             span {
                 background: linear-gradient(to bottom, transparent 0 rem(50), $yellow rem(50) 100%);
                 font-feature-settings: "palt";
@@ -311,10 +311,188 @@
             width: calc(100% - 5em);
             margin-inline: auto;
 
-            .lp-c-ct03__point {
-                
+            .lp-c-ct03__point {}
+        }
+
+        &__head {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            flex-direction: row;
+            gap: rem(65);
+            padding-top: rem(27);
+            padding-left: rem(60);
+            padding-bottom: 0;
+
+            &-person {
+                width: rem(200);
+            }
+
+            &-inner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: rem(20);
+                padding-bottom: rem(42);
+            }
+
+            &-01 {
+                gap: rem(10);
+                font-feature-settings: "palt";
+
+                &-01 {
+                    font-size: rem(28);
+                }
+
+                &-02 {
+                    font-size: rem(42);
+                }
+
+            }
+
+            &-02 {
+                gap: rem(10);
+                font-feature-settings: "palt";
+
+                &-01 {
+                    font-size: rem(28);
+                }
+
+                &-02 {
+                    font-size: rem(42);
+                }
             }
         }
-        
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: rem(10);
+            background: $white;
+            padding: rem(40) rem(45) rem(60);
+        }
+
+        &__desc {
+            font-weight: 700;
+            font-size: rem(28);
+            line-height: 1.5;
+            letter-spacing: 0;
+            max-width: rem(830);
+        }
+
+        &__mechanism {
+            position: relative;
+            margin-top: rem(60);
+            width: 100%;
+            z-index: 1;
+
+            &-title {
+                font-weight: 700;
+                font-size: rem(28);
+                line-height: 1.5;
+                letter-spacing: 0;
+                width: rem(575);
+                height: rem(68);
+                background: #D93E13;
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-inline: auto;
+            }
+
+            &-waste-title {
+                font-weight: 700;
+                font-size: rem(28);
+                line-height: 1.5;
+                letter-spacing: 0;
+                margin-top: rem(25);
+                text-align: center;
+            }
+
+            &-waste-items {
+                position: relative;
+                display: flex;
+                align-items: flex-start;
+                gap: rem(30);
+                margin-top: rem(36);
+            }
+
+            &-waste-item {
+                flex: 1;
+            }
+
+        }
+
+        &__triangle {
+            position: absolute;
+            top: calc(100% - rem(49));
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            width: rem(800);
+            height: rem(221);
+        }
+
+        &__recycle {
+            margin-top: rem(54);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &-icon {
+                width: rem(50);
+                height: rem(50);
+            }
+
+            &-text {
+                font-weight: 700;
+                font-size: rem(43);
+                line-height: 1.5;
+                letter-spacing: 0;
+                color: #D93E13;
+            }
+        }
+
+        &__company-info {
+            font-weight: 700;
+            font-size: rem(28);
+            line-height: 1.5;
+            letter-spacing: 0;
+            margin-top: rem(33);
+            text-align: center;
+        }
+
+        &__bottom {
+            margin-top: rem(38);
+            text-align: center;
+
+            &-text {
+                font-weight: 700;
+                font-size: rem(40);
+                line-height: 1.8;
+                letter-spacing: 0;
+                color: #D93E13;
+
+                &-01 {
+                    line-height: calc(60 / 40);
+                    border: rem(3) solid #D93E13;
+                    width: fit-content;
+                    padding-inline: rem(5);
+                    margin-right: rem(5);
+                }
+
+                &-02 {
+                    background: linear-gradient(to bottom, transparent 0 rem(58), $yellow rem(58) rem(68), transparent rem(68) 100%);
+                }
+
+
+
+            }
+        }
+
     }
 }

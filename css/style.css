@@ -3781,7 +3781,7 @@ img {
   left: 0;
   width: 1.125rem;
   height: 2.9375rem;
-  background-image: url(../images/c-ver/lp-c-ct01-var-a.png);
+  background-image: url(../images/c-ver/lp-c-ct01-var-a.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -3793,7 +3793,7 @@ img {
   right: 0;
   width: 1.0625rem;
   height: 3rem;
-  background-image: url(../images/c-ver/lp-c-ct01-var-b.png);
+  background-image: url(../images/c-ver/lp-c-ct01-var-b.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -3905,7 +3905,7 @@ img {
   color: #F43500;
   width: 49.125rem;
   height: 12.6875rem;
-  background-image: url(../images/c-ver/lp-c-ct02-head.png);
+  background-image: url(../images/c-ver/lp-c-ct02-head.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -4011,5 +4011,157 @@ img {
   max-width: 60rem;
   width: calc(100% - 5em);
   margin-inline: auto;
+}
+.lp-c-ct02__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 4.0625rem;
+  padding-top: 1.6875rem;
+  padding-left: 3.75rem;
+  padding-bottom: 0;
+}
+.lp-c-ct02__head-person {
+  width: 12.5rem;
+}
+.lp-c-ct02__head-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding-bottom: 2.625rem;
+}
+.lp-c-ct02__head-01 {
+  gap: 0.625rem;
+  font-feature-settings: "palt";
+}
+.lp-c-ct02__head-01-01 {
+  font-size: 1.75rem;
+}
+.lp-c-ct02__head-01-02 {
+  font-size: 2.625rem;
+}
+.lp-c-ct02__head-02 {
+  gap: 0.625rem;
+  font-feature-settings: "palt";
+}
+.lp-c-ct02__head-02-01 {
+  font-size: 1.75rem;
+}
+.lp-c-ct02__head-02-02 {
+  font-size: 2.625rem;
+}
+.lp-c-ct02__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  background: var(--white);
+  padding: 2.5rem 2.8125rem 3.75rem;
+}
+.lp-c-ct02__desc {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  max-width: 51.875rem;
+}
+.lp-c-ct02__mechanism {
+  position: relative;
+  margin-top: 3.75rem;
+  width: 100%;
+  z-index: 1;
+}
+.lp-c-ct02__mechanism-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  width: 35.9375rem;
+  height: 4.25rem;
+  background: #D93E13;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+.lp-c-ct02__mechanism-waste-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-top: 1.5625rem;
+  text-align: center;
+}
+.lp-c-ct02__mechanism-waste-items {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.875rem;
+  margin-top: 2.25rem;
+}
+.lp-c-ct02__mechanism-waste-item {
+  flex: 1;
+}
+.lp-c-ct02__triangle {
+  position: absolute;
+  top: calc(100% - 3.0625rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 50rem;
+  height: 13.8125rem;
+}
+.lp-c-ct02__recycle {
+  margin-top: 3.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lp-c-ct02__recycle-icon {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.lp-c-ct02__recycle-text {
+  font-weight: 700;
+  font-size: 2.6875rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #D93E13;
+}
+.lp-c-ct02__company-info {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-top: 2.0625rem;
+  text-align: center;
+}
+.lp-c-ct02__bottom {
+  margin-top: 2.375rem;
+  text-align: center;
+}
+.lp-c-ct02__bottom-text {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.8;
+  letter-spacing: 0;
+  color: #D93E13;
+}
+.lp-c-ct02__bottom-text-01 {
+  line-height: 1.5;
+  border: 0.1875rem solid #D93E13;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-inline: 0.3125rem;
+  margin-right: 0.3125rem;
+}
+.lp-c-ct02__bottom-text-02 {
+  background: linear-gradient(to bottom, transparent 0 3.625rem, var(--yellow) 3.625rem 4.25rem, transparent 4.25rem 100%);
 }
 /*# sourceMappingURL=style.css.map */
