@@ -4218,9 +4218,12 @@ img {
   align-items: center;
   justify-content: center;
   gap: 3.75rem;
-  max-width: 75rem;
-  width: calc(100% - 5em);
-  margin-inline: auto;
+  width: 100%;
+}
+.lp-c-ct03 .structure__body {
+  padding-block: 3.5rem 5rem;
+  border-radius: 0;
+  box-shadow: none;
 }
 .lp-c-ct03__feature {
   display: flex;
@@ -4282,6 +4285,52 @@ img {
   font-size: 3.75rem;
   line-height: 1.2;
   letter-spacing: 0.06em;
+}
+.lp-c-ct03__evaluation {
+  width: 60em;
+  max-width: calc(100% - 5em);
+  margin-inline: auto;
+}
+.lp-c-ct03__evaluation-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  background: linear-gradient(to bottom, transparent 0 3.125rem, var(--yellow) 3.125rem 100%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+.lp-c-ct03__evaluation-subtitle {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.lp-c-ct03__evaluation-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9375rem;
+  margin-top: 2.5rem;
+}
+.lp-c-ct03__evaluation-item {
+  width: 11.25rem;
+}
+.lp-c-ct03__evaluation-desc {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-top: 3.125rem;
+}
+.lp-c-ct03__evaluation-desc-em {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #d93e13;
 }
 
 .lp-c__voice.voice .voice__col {
