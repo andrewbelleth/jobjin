@@ -844,122 +844,127 @@
                     </div>
                 </div>
             </div>
-            <div class="flow construction-flow">
+            <div class="flow construction-flow construction-accordion">
                 <div class="flow__bg-img construction-flow__bg-img">
                     <img src="images/construction-bg-img.webp" alt="" loading="lazy">
                 </div>
                 <h2 class="flow__title section__title">解体工事の流れ</h2>
                 <div class="flow__col">
+                    <!-- STEP 01: 常に表示 -->
                     <div class="flow__item">
                         <p class="flow__item-num">
                             <span class="step">STEP</span>
                             <span class="num">01</span>
                         </p>
                         <p class="flow__item-img">
-                            <img src="images/construction-flow01.webp" alt="行政へ解体工事届出書提出" width="220" height="205"
-                                loading="lazy">
+                            <img src="images/construction-flow01.webp" alt="行政へ解体工事届出書提出" width="220" height="205" loading="lazy">
                         </p>
                         <div class="flow__item-body">
                             <h3 class="flow__item-title">行政へ解体工事届出書提出</h3>
                             <p class="flow__item-text">解体業者が提出を代行いたします。お客様はご契約時に委任状をお渡しいただければ問題ありません。</p>
                         </div>
                     </div>
-                    <div class="flow__item">
-                        <p class="flow__item-num">
-                            <span class="step">STEP</span>
-                            <span class="num">02</span>
-                        </p>
-                        <p class="flow__item-img">
-                            <img src="images/construction-flow02.webp" alt="電気・ガス・電話等の使用停止" width="220" height="205"
-                                loading="lazy">
-                        </p>
-                        <div class="flow__item-body">
-                            <h3 class="flow__item-title">電気・ガス・<span>電話等の使用停止</span></h3>
-                            <p class="flow__item-text">水道はメーターを残しての使用停止が一般的です。<br>これらの手続きが困難な場合はご相談ください。</p>
+        
+                    <div class="accordion-content accordion-hidden">
+                        <!-- STEP 02 -->
+                        <div class="flow__item flow__item--2">
+                            <p class="flow__item-num">
+                                <span class="step">STEP</span>
+                                <span class="num">02</span>
+                            </p>
+                            <p class="flow__item-img">
+                                <img src="images/construction-flow02.webp" alt="電気・ガス・電話等の使用停止" width="220" height="205" loading="lazy">
+                            </p>
+                            <div class="flow__item-body">
+                                <h3 class="flow__item-title">電気・ガス・<span>電話等の使用停止</span></h3>
+                                <p class="flow__item-text">水道はメーターを残しての使用停止が一般的です。<br>これらの手続きが困難な場合はご相談ください。</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flow__item">
-                        <p class="flow__item-num">
-                            <span class="step">STEP</span>
-                            <span class="num">03</span>
-                        </p>
-                        <p class="flow__item-img">
-                            <img src="images/construction-flow03.webp" alt="近隣へのご挨拶" width="220" height="205"
-                                loading="lazy">
-                        </p>
-                        <div class="flow__item-body">
-                            <h3 class="flow__item-title">近隣へのご挨拶</h3>
-                            <p class="flow__item-text">工事の数日前に解体業者が工期や連絡先の周知を兼ねて行います。お客様にご同行いただくのが理想です。</p>
+                        <!-- STEP 03 -->
+                        <div class="flow__item">
+                            <p class="flow__item-num">
+                                <span class="step">STEP</span>
+                                <span class="num">03</span>
+                            </p>
+                            <p class="flow__item-img">
+                                <img src="images/construction-flow03.webp" alt="近隣へのご挨拶" width="220" height="205" loading="lazy">
+                            </p>
+                            <div class="flow__item-body">
+                                <h3 class="flow__item-title">近隣へのご挨拶</h3>
+                                <p class="flow__item-text">工事の数日前に解体業者が工期や連絡先の周知を兼ねて行います。お客様にご同行いただくのが理想です。</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flow__item">
-                        <p class="flow__item-num">
-                            <span class="step">STEP</span>
-                            <span class="num">04</span>
-                        </p>
-                        <p class="flow__item-img">
-                            <img src="images/construction-flow04.webp" alt="解体工事着工" width="220" height="205"
-                                loading="lazy">
-                        </p>
-                        <div class="flow__item-body">
-                            <h3 class="flow__item-title">解体工事着工</h3>
+                        <!-- STEP 04 -->
+                        <div class="flow__item">
+                            <p class="flow__item-num">
+                                <span class="step">STEP</span>
+                                <span class="num">04</span>
+                            </p>
+                            <p class="flow__item-img">
+                                <img src="images/construction-flow04.webp" alt="解体工事着工" width="220" height="205" loading="lazy">
+                            </p>
+                            <div class="flow__item-body">
+                                <h3 class="flow__item-title">解体工事着工</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flow__item">
-                        <p class="flow__item-num">
-                            <span class="step">STEP</span>
-                            <span class="num">05</span>
-                        </p>
-                        <p class="flow__item-img">
-                            <img src="images/construction-flow05.webp" alt="解体工事竣工・お引渡し" width="220" height="205"
-                                loading="lazy">
-                        </p>
-                        <div class="flow__item-body">
-                            <h3 class="flow__item-title">解体工事竣工・お引渡し</h3>
+                        <!-- STEP 05 -->
+                        <div class="flow__item">
+                            <p class="flow__item-num">
+                                <span class="step">STEP</span>
+                                <span class="num">05</span>
+                            </p>
+                            <p class="flow__item-img">
+                                <img src="images/construction-flow05.webp" alt="解体工事竣工・お引渡し" width="220" height="205" loading="lazy">
+                            </p>
+                            <div class="flow__item-body">
+                                <h3 class="flow__item-title">解体工事竣工・お引渡し</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flow__item">
-                        <p class="flow__item-num">
-                            <span class="step">STEP</span>
-                            <span class="num">06</span>
-                        </p>
-                        <p class="flow__item-img">
-                            <img src="images/construction-flow06.webp" alt="ご請求書到着・ご入金" width="220" height="205"
-                                loading="lazy">
-                        </p>
-                        <div class="flow__item-body">
-                            <h3 class="flow__item-title">ご請求書到着・ご入金</h3>
+                        <!-- STEP 06 -->
+                        <div class="flow__item">
+                            <p class="flow__item-num">
+                                <span class="step">STEP</span>
+                                <span class="num">06</span>
+                            </p>
+                            <p class="flow__item-img">
+                                <img src="images/construction-flow06.webp" alt="ご請求書到着・ご入金" width="220" height="205" loading="lazy">
+                            </p>
+                            <div class="flow__item-body">
+                                <h3 class="flow__item-title">ご請求書到着・ご入金</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flow__item">
-                        <p class="flow__item-num">
-                            <span class="step">STEP</span>
-                            <span class="num">07</span>
-                        </p>
-                        <p class="flow__item-img">
-                            <img src="images/construction-flow07.webp" alt="取り毀し証明書ほか必要書類到着" width="220" height="205"
-                                loading="lazy">
-                        </p>
-                        <div class="flow__item-body">
-                            <h3 class="flow__item-title">取り毀し証明書ほか<span>必要書類到着</span></h3>
-                            <p class="flow__item-text">建物を解体した際に必要となる書類が届きます。「取り毀し証明書」は解体業者が発行します。</p>
+                        <!-- STEP 07 -->
+                        <div class="flow__item">
+                            <p class="flow__item-num">
+                                <span class="step">STEP</span>
+                                <span class="num">07</span>
+                            </p>
+                            <p class="flow__item-img">
+                                <img src="images/construction-flow07.webp" alt="取り毀し証明書ほか必要書類到着" width="220" height="205" loading="lazy">
+                            </p>
+                            <div class="flow__item-body">
+                                <h3 class="flow__item-title">取り毀し証明書ほか<span>必要書類到着</span></h3>
+                                <p class="flow__item-text">建物を解体した際に必要となる書類が届きます。「取り毀し証明書」は解体業者が発行します。</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flow__item">
-                        <p class="flow__item-num">
-                            <span class="step">STEP</span>
-                            <span class="num">08</span>
-                        </p>
-                        <p class="flow__item-img">
-                            <img src="images/construction-flow08.webp" alt="建物滅失登記（解体工事完了後1ヵ月以内）" width="220"
-                                height="205" loading="lazy">
-                        </p>
-                        <div class="flow__item-body">
-                            <h3 class="flow__item-title">建物滅失登記<span>（解体工事完了後1ヵ月以内）</span></h3>
-                            <p class="flow__item-text">登記されている建物を解体した場合に、登記情報を無くす手続きを行う必要があります。</p>
+                        <!-- STEP 08 -->
+                        <div class="flow__item">
+                            <p class="flow__item-num">
+                                <span class="step">STEP</span>
+                                <span class="num">08</span>
+                            </p>
+                            <p class="flow__item-img">
+                                <img src="images/construction-flow08.webp" alt="建物滅失登記（解体工事完了後1ヵ月以内）" width="220" height="205" loading="lazy">
+                            </p>
+                            <div class="flow__item-body">
+                                <h3 class="flow__item-title">建物滅失登記<span>（解体工事完了後1ヵ月以内）</span></h3>
+                                <p class="flow__item-text">登記されている建物を解体した場合に、登記情報を無くす手続きを行う必要があります。</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- もっと見るボタン -->
+                <button class="show-more-btn">もっと見る</button>
             </div>
             <div class="company">
                 <div class="company__content">
@@ -1054,6 +1059,26 @@
 			$(this).next('.faq__item-answer').slideToggle();
 		});
 	});
+    </script>
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const showMoreBtn = document.querySelector('.show-more-btn');
+            const accordionContent = document.querySelector('.accordion-content');
+            
+            showMoreBtn.addEventListener('click', function() {
+                // アコーディオンの表示/非表示を切り替え
+                accordionContent.classList.toggle('accordion-hidden');
+                
+                // ボタンのテキストと状態を切り替え
+                if (accordionContent.classList.contains('accordion-hidden')) {
+                    showMoreBtn.textContent = 'もっと見る';
+                    showMoreBtn.classList.remove('open');
+                } else {
+                    showMoreBtn.textContent = '閉じる';
+                    showMoreBtn.classList.add('open');
+                }
+            });
+        });
     </script>
 </body>
 

@@ -5291,4 +5291,91 @@ img {
     width: 90%;
     aspect-ratio: 500/164;
   }
+}
+
+.construction-accordion .flow__item--2::before {
+  content: "";
+  width: 2.8125em;
+  height: 1.6875em;
+  background: url(../images/icon/construction-flow__arrow.webp) no-repeat center center/cover;
+  position: absolute;
+  display: block;
+  bottom: calc(100% + 1em);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.construction-accordion .accordion-hidden {
+  display: none;
+}
+.construction-accordion .accordion-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.75em;
+}
+.construction-accordion .accordion-content::before {
+  content: none;
+}
+.construction-accordion .accordion-content.accordion-hidden {
+  display: none;
+}
+.construction-accordion .show-more-btn {
+  display: block;
+  width: 200px;
+  margin: 30px auto 0;
+  padding: 12px 20px;
+  background-color: #1649A8;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.construction-accordion .show-more-btn:hover {
+  background-color: #1649A8;
+}
+.construction-accordion .show-more-btn::after {
+  left: 10px;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 8px;
+  position: relative;
+  top: -2px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.construction-accordion .show-more-btn.open::after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  top: 2px;
+}
+@media (max-width: 640px) {
+  .construction-accordion .flow__item--2::before {
+    font-size: 0.625em;
+  }
+  .construction-accordion .accordion-content {
+    width: auto;
+    gap: 2.5em;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
