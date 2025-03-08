@@ -716,6 +716,10 @@
       padding-inline: rem(20);
       gap: rem(25);
     }
+    .voice__item {
+        max-width: 400px;
+        margin-inline: auto;
+    }
     .voice__item-body {
       padding-block: rem(30) rem(40);
       display: flex;
