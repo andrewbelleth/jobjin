@@ -2595,10 +2595,11 @@
             }
 
             &-answer {
-                padding: .5em 1em;
+                padding: .5em .75em;
 
                 p {
-                    font-size: .875em;
+                    font-size: rem(14);
+                    font-size: rem(15);
                 }
             }
         }
@@ -2808,7 +2809,7 @@
             }
 
             &-text {
-                font-size: .875em;
+                font-size:  rem(16);
             }
 
             &-yellow {
@@ -2819,7 +2820,7 @@
                 border-radius: em(4);
 
                 &-text {
-                    font-size: .875em;
+                    font-size: rem(15);
                 }
             }
         }
@@ -3380,7 +3381,7 @@
                 margin-top: .25em;
                 
                 p {
-                    font-size: rem(13);
+                    font-size: rem(16);
                     line-height: 190%;
                     background-size: 100% 1.9em;
                     background-position: 0 .875em;
