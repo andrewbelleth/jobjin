@@ -3727,13 +3727,16 @@ img {
 
 .manga {
   max-width: 1200px;
-  width: calc(100% - 2.5rem);
+  width: 70%;
   height: 100%;
   background-color: var(--white);
   margin-inline: auto;
-  margin-top: 7.875rem;
 }
-
+@media (max-width: 1024px) {
+  .manga {
+    width: 90%;
+  }
+}
 .lp-c-ct01-wrap {
   padding-bottom: 5rem;
 }
@@ -5050,8 +5053,9 @@ img {
 .lp-c__voice.voice .voice__item-text--02 P,
 .lp-c__voice.voice .voice__item-text--03 P,
 .lp-c__voice.voice .voice__item-text--04 P {
-  background-size: 100% 1.9em;
+  background-size: 70% 1.9em;
   line-height: 190%;
+  background-repeat: repeat;
 }
 .lp-c__voice.voice .voice__item-text--01 img,
 .lp-c__voice.voice .voice__item-text--02 img,
@@ -5060,15 +5064,9 @@ img {
   margin-block: 1.25rem 0;
   margin-inline: auto;
 }
-.lp-c__voice.voice .voice__item-text--01 p {
-  background-size: 97% 1.9em;
-}
 .lp-c__voice.voice .voice__item-text--01 img {
   width: 33.6875rem;
   aspect-ratio: 539/168;
-}
-.lp-c__voice.voice .voice__item-text--02 P {
-  background-size: 100% 1.85em;
 }
 .lp-c__voice.voice .voice__item-text--02 img {
   width: 31.1875rem;
@@ -5127,6 +5125,12 @@ img {
     width: 100%;
     margin-left: 0;
     margin-top: 0.625rem;
+  }
+  .lp-c__voice.voice .voice__item-text--01 p,
+.lp-c__voice.voice .voice__item-text--02 p,
+.lp-c__voice.voice .voice__item-text--03 p,
+.lp-c__voice.voice .voice__item-text--04 p {
+    background-size: 100% 1.9em;
   }
   .lp-c__voice.voice .voice__item-text--01 img {
     width: 100%;
@@ -5283,9 +5287,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  #lp-c .header__logo-img {
-    display: none;
-  }
   #lp-c .header__logo-text {
     text-align: center;
   }

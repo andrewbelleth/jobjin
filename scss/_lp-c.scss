@@ -1591,10 +1591,11 @@
   .voice__item-text--04 {
     width: rem(651);
     margin-left: rem(75);
-
+    
     P {
-      background-size: 100% 1.9em;
+      background-size: 70% 1.9em;
       line-height: 190%;
+      background-repeat: repeat;
     }
 
     img {
@@ -1605,7 +1606,7 @@
 
   .voice__item-text--01 {
     p {
-      background-size: 97% 1.9em;
+      // background-size: 97% 1.9em;
     }
 
     img {
@@ -1616,7 +1617,7 @@
 
   .voice__item-text--02 {
     P {
-      background-size: 100% 1.85em;
+      // background-size: 100% 1.85em;
     }
 
     img {
@@ -1691,6 +1692,10 @@
       width: 100%;
       margin-left: 0;
       margin-top: rem(10);
+
+      p {
+        background-size: 100% 1.9em;
+      }
     }
 
     .voice__item-text--01 {
@@ -1888,10 +1893,6 @@
 @include mq(tb) {
   #lp-c {
     .header {
-      &__logo-img {
-        display: none;
-      }
-
       &__logo-text {
         text-align: center;
 
